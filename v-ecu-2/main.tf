@@ -38,7 +38,7 @@ resource "aws_instance" "new_repo_ec2" {
   instance_type = "t2.micro"
 
   tags = {
-    Name = "New Repo EC2 4"
+    Name = "vECU 2 Repo EC2"
   }
 }
 

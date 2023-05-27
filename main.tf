@@ -33,7 +33,7 @@ data "aws_ami" "amazon_linux_2" {
   }
 }
 
-resource "aws_instance" "my_ec2" {
+resource "aws_instance" "new_repo_ec2" {
   ami           = lookup(local.ecus, var.ecu, "").ami
   instance_type = "t2.micro"
 
